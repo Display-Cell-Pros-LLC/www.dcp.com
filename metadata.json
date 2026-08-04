@@ -1,8 +1,0 @@
-{
-  "name": "Display & Cell Pros LLC",
-  "description": "Official corporate portal for Display & Cell Pros LLC (D&CP) — Combat Veteran & Tribal Member-Owned Tier 3 Precision Micro-Soldering, Mobile Data-Secure Repair Lab, and Federal Procurement Contractor.",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}

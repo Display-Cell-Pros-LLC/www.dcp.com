@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Mission-grade dark palette: gunmetal base, signal amber, steel accents */
+    --background: 220 26% 8%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 24% 11%;
+    --card-foreground: 210 20% 92%;
+
+    --muted: 220 18% 16%;
+    --muted-foreground: 215 14% 62%;
+
+    --border: 220 16% 20%;
+    --input: 220 16% 18%;
+
+    /* Signal amber - precision / veteran discipline */
+    --primary: 38 92% 54%;
+    --primary-foreground: 220 40% 8%;
+
+    /* Steel cyan accent - data-secure / high-tech */
+    --accent: 190 80% 48%;
+    --accent-foreground: 220 40% 8%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 20% 98%;
+
+    --ring: 38 92% 54%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Subtle circuit grid used across dark sections */
+.circuit-grid {
+  background-image:
+    linear-gradient(hsl(var(--border) / 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border) / 0.4) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
